@@ -1,9 +1,7 @@
 package com.jardelbarbosa.course.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.jardelbarbosa.course.OrderStatus;
-import lombok.*;
-import org.hibernate.Hibernate;
+import com.jardelbarbosa.course.enums.OrderStatus;
 
 import javax.persistence.*;
 import java.time.Instant;

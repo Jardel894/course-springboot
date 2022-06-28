@@ -1,4 +1,4 @@
-package com.jardelbarbosa.course;
+package com.jardelbarbosa.course.enums;
 
 public enum OrderStatus {
 
