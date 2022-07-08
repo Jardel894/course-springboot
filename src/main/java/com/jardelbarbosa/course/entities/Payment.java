@@ -1,5 +1,7 @@
 package com.jardelbarbosa.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.Objects;
@@ -15,7 +17,9 @@ public class Payment {
 
     @OneToOne
     @MapsId
+    @JsonIgnore
     private Order order;
+
 
     public Payment(){
 
