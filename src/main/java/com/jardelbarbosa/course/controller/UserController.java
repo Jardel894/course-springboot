@@ -40,4 +40,10 @@ public class UserController {
         userServices.delete(id);
          return ResponseEntity.noContent().build();
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj){
+        obj = userServices.update(id, obj);
+        return ResponseEntity.ok().body(obj);
+    }
 }
